@@ -2,3 +2,17 @@ name: BasicPlugin
 version: '${project.version}'
 main: me.oliver193.basicplugin.BasicPlugin
 api-version: '1.20'
+authors: [ oliver193 ]
+commands:
+  heal:
+    permission: basicplugin.heal
+    description: Heal yourself.
+    usage: /<command>
+  feed:
+    permission: basicplugin.feed
+    description: Feed yourself.
+    usage: /<command>
+  fly:
+    permission: basicplugin.fly
+    description: Enable or disable flight!
+    usage: /<command>
