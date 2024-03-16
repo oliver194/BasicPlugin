@@ -1,0 +1,4 @@
+name: BasicPlugin
+version: '${project.version}'
+main: me.oliver193.basicplugin.BasicPlugin
+api-version: '1.20'
