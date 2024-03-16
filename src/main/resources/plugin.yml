@@ -16,3 +16,7 @@ commands:
     permission: basicplugin.fly
     description: Enable or disable flight!
     usage: /<command>
+  starve:
+    permission: basicplugin.starve
+    description: Make yourself starve.
+    usage: /<command>
