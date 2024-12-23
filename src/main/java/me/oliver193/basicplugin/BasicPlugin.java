@@ -1,10 +1,7 @@
 package me.oliver193.basicplugin;
 
 import me.oliver193.basicplugin.bstats.Metrics;
-import me.oliver193.basicplugin.commands.FeedCommand;
-import me.oliver193.basicplugin.commands.FlyCommand;
-import me.oliver193.basicplugin.commands.HealCommand;
-import me.oliver193.basicplugin.commands.StarveCommand;
+import me.oliver193.basicplugin.commands.*;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class BasicPlugin extends JavaPlugin {
@@ -22,6 +19,7 @@ public class BasicPlugin extends JavaPlugin {
         getCommand("fly").setExecutor(new FlyCommand());
         getCommand("heal").setExecutor(new HealCommand());
         getCommand("starve").setExecutor(new StarveCommand());
+        getCommand("serverinfo").setExecutor(new ServerInfoCommand());
 
     }
 

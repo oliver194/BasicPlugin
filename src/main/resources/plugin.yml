@@ -1,8 +1,9 @@
 name: BasicPlugin
 version: '${project.version}'
 main: me.oliver193.basicplugin.BasicPlugin
-api-version: '1.20'
+api-version: '1.21'
 authors: [ oliver193 ]
+website: github.com/oliver194/BasicPlugin
 commands:
   heal:
     permission: basicplugin.heal
@@ -19,4 +20,8 @@ commands:
   starve:
     permission: basicplugin.starve
     description: Make yourself starve.
+    usage: /<command>
+  serverinfo:
+    permission: basicplugin.serverinfo
+    description: View basic information about the server.
     usage: /<command>
