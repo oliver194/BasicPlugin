@@ -6,7 +6,7 @@
 
   <groupId>me.oliver193</groupId>
   <artifactId>basicplugin</artifactId>
-  <version>1.0</version>
+  <version>1.0.1</version>
   <packaging>jar</packaging>
 
   <name>BasicPlugin</name>
@@ -66,6 +66,11 @@
           <artifactId>spigot-api</artifactId>
           <version>1.21.4-R0.1-SNAPSHOT</version>
           <scope>provided</scope>
+      </dependency>
+      <dependency>
+          <groupId>com.github.oshi</groupId>
+          <artifactId>oshi-core</artifactId>
+          <version>6.6.5</version>
       </dependency>
   </dependencies>
 </project>
