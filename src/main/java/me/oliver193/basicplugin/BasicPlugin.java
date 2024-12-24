@@ -4,9 +4,10 @@ import me.oliver193.basicplugin.bstats.Metrics;
 import me.oliver193.basicplugin.commands.*;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import java.io.File;
+
 public class BasicPlugin extends JavaPlugin {
 
-    @Override
     public void onEnable() {
 
         int pluginId = 21341;
@@ -23,10 +24,10 @@ public class BasicPlugin extends JavaPlugin {
 
     }
 
-    @Override
     public void onDisable() {
         // Plugin shutdown logic
         getLogger().info("Disabling BasicPlugin.");
 
     }
+
 }

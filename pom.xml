@@ -6,7 +6,7 @@
 
   <groupId>me.oliver193</groupId>
   <artifactId>basicplugin</artifactId>
-  <version>1.0-ALPHA</version>
+  <version>1.0</version>
   <packaging>jar</packaging>
 
   <name>BasicPlugin</name>
