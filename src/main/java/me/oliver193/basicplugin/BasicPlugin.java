@@ -4,8 +4,6 @@ import me.oliver193.basicplugin.bstats.Metrics;
 import me.oliver193.basicplugin.commands.*;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import java.io.File;
-
 public class BasicPlugin extends JavaPlugin {
 
     public void onEnable() {
@@ -21,6 +19,10 @@ public class BasicPlugin extends JavaPlugin {
         getCommand("heal").setExecutor(new HealCommand());
         getCommand("starve").setExecutor(new StarveCommand());
         getCommand("serverinfo").setExecutor(new ServerInfoCommand());
+        getCommand("repair").setExecutor(new RepairCommand());
+        //register tab completer for repair
+        RepairCommand repairCommand = new RepairCommand();
+        getCommand("repair").setTabCompleter(repairCommand);
 
     }
 

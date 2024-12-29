@@ -38,15 +38,15 @@ public class ServerInfoCommand implements CommandExecutor {
 
 
         Msg.send(commandSender, "&7------------= &aServer Info &7=------------");
-        Msg.send(commandSender, "Server Version: " + Bukkit.getBukkitVersion());
+        Msg.send(commandSender, "Version: " + Bukkit.getBukkitVersion());
         Msg.send(commandSender, "Software: " + Bukkit.getName());
         Msg.send(commandSender, "Java Version: " + System.getProperty("java.version"));
+        Msg.send(commandSender, "Uptime: " + minutes + " minutes and " + seconds + " seconds");
         Msg.send(commandSender, "OS: " + System.getProperty("os.name") + " (" + System.getProperty("os.version") + ") " + System.getProperty("os.arch"));
         Msg.send(commandSender, "CPU: " + processorIdentifier.getName());
         Msg.send(commandSender, "CPU Speed: " + processorIdentifier.getVendorFreq() / 1000000000.0 + " GHz");
         Msg.send(commandSender, "Core Count: " + processor.getPhysicalProcessorCount() + " cores / " + processor.getLogicalProcessorCount() + " threads");
         Msg.send(commandSender, "RAM Usage: " + usedMB + " MB" + " of " + maxMB + " MB");
-        Msg.send(commandSender, "Uptime: " + minutes + " minutes and " + seconds + " seconds");
 
         return true;
     }

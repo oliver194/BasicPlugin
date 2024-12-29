@@ -23,5 +23,9 @@ commands:
     usage: /<command>
   serverinfo:
     permission: basicplugin.serverinfo
-    description: View basic information about the server.
+    description: View basic info about the server.
     usage: /<command>
+  repair:
+    permission: basicplugin.repair
+    description: Repairs the item you're holding.
+    usage: /repair [hand/all]
